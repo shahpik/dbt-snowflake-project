@@ -1,0 +1,1 @@
+-- Another dbt model\nSELECT 2 AS id
