@@ -1,0 +1,51 @@
+domain: business_idea
+description: Default criteria for evaluating a new business idea.
+criteria:
+  - id: problem_severity
+    name: Problem Severity
+    description: How painful and frequent is the problem for the target customer? Is it a vitamin or a painkiller?
+    scale: 1-10
+    weight: 1.5
+    required: true
+  - id: market_size
+    name: Market Size & TAM
+    description: Is the total addressable market large enough to support a meaningful business? Consider bottom-up sizing.
+    scale: 1-10
+    weight: 1.3
+    required: true
+  - id: differentiation
+    name: Differentiation & Moat
+    description: What makes this defensible? Network effects, data, brand, switching costs, economies of scale.
+    scale: 1-10
+    weight: 1.2
+    required: true
+  - id: go_to_market
+    name: Go-To-Market Feasibility
+    description: Is there a credible, affordable path to reach and acquire the first 100 customers?
+    scale: 1-10
+    weight: 1.0
+    required: true
+  - id: unit_economics
+    name: Unit Economics
+    description: Do the likely CAC, LTV, and gross margin make the business viable at scale?
+    scale: 1-10
+    weight: 1.2
+    required: true
+  - id: team_fit
+    name: Founder / Team Fit
+    description: Does the founding team have unique insight, skills, or unfair advantages for this specific problem?
+    scale: 1-10
+    weight: 1.0
+    required: false
+  - id: timing
+    name: Market Timing
+    description: Why now? What structural shifts (tech, regulation, behavior) make this the right moment?
+    scale: 1-10
+    weight: 0.9
+    required: false
+  - id: execution_risk
+    name: Execution Risk
+    description: How hard is it to actually build and operate this? Technical, operational, and regulatory complexity.
+    scale: 1-10
+    weight: 1.0
+    required: false
