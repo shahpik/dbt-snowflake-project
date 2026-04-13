@@ -1,0 +1,85 @@
+# ---- Secrets & environment ----
+# Never commit API keys or local env config
+.env
+.env.*
+!.env.example
+*.key
+secrets.yaml
+secrets.yml
+credentials.json
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# ---- Testing & coverage ----
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# ---- Type checkers & linters ----
+.mypy_cache/
+.ruff_cache/
+.pyright/
+
+# ---- Project outputs ----
+# Generated evaluation reports and raw model responses
+output/
+outputs/
+reports/
+logs/
+*.log
+
+# Cached embeddings and intermediate artifacts
+.cache/
+cache/
+*.pkl
+*.parquet
+
+# ---- User-local criteria templates ----
+# Save personal templates locally without committing
+templates/local/
+templates/*.local.yaml
+
+# ---- Editors & IDEs ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Jupyter (if you end up exploring in notebooks) ----
+.ipynb_checkpoints/
+*.ipynb_checkpoints
