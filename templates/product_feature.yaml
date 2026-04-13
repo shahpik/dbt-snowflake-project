@@ -1,0 +1,45 @@
+domain: product_feature
+description: Default criteria for evaluating a product feature proposal.
+criteria:
+  - id: user_value
+    name: User Value
+    description: How much does this improve the life of the target user, and for how many users?
+    scale: 1-10
+    weight: 1.5
+    required: true
+  - id: strategic_fit
+    name: Strategic Fit
+    description: Does this advance the product's north star and current strategic bets?
+    scale: 1-10
+    weight: 1.2
+    required: true
+  - id: business_impact
+    name: Business Impact
+    description: Expected effect on activation, retention, revenue, or other key business metrics.
+    scale: 1-10
+    weight: 1.3
+    required: true
+  - id: build_cost
+    name: Build Cost & Complexity
+    description: Engineering, design, and ongoing maintenance cost. Higher score = lower cost.
+    scale: 1-10
+    weight: 1.0
+    required: true
+  - id: time_to_value
+    name: Time to Value
+    description: How quickly can users experience the benefit after shipping? Higher score = faster.
+    scale: 1-10
+    weight: 0.9
+    required: false
+  - id: risk
+    name: Risk (regression, privacy, abuse)
+    description: Risk of regressions, privacy concerns, abuse vectors, or brand harm. Higher score = lower risk.
+    scale: 1-10
+    weight: 1.0
+    required: true
+  - id: reversibility
+    name: Reversibility
+    description: How easily can this decision be reversed if it does not work? Higher score = more reversible.
+    scale: 1-10
+    weight: 0.8
+    required: false

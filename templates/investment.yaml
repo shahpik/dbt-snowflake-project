@@ -1,0 +1,51 @@
+domain: investment
+description: Default criteria for evaluating an investment thesis.
+criteria:
+  - id: thesis_clarity
+    name: Thesis Clarity
+    description: Is the core investment thesis crisp, falsifiable, and non-consensus in a defensible way?
+    scale: 1-10
+    weight: 1.3
+    required: true
+  - id: valuation
+    name: Valuation & Margin of Safety
+    description: Is the entry price attractive relative to intrinsic value and downside scenarios?
+    scale: 1-10
+    weight: 1.4
+    required: true
+  - id: quality_of_business
+    name: Quality of Business
+    description: Returns on capital, competitive advantage durability, and reinvestment runway.
+    scale: 1-10
+    weight: 1.2
+    required: true
+  - id: management
+    name: Management & Capital Allocation
+    description: Track record, alignment, and capital allocation discipline of the operators.
+    scale: 1-10
+    weight: 1.0
+    required: true
+  - id: catalysts
+    name: Catalysts & Time Horizon
+    description: Are there identifiable catalysts to close the gap between price and value within the horizon?
+    scale: 1-10
+    weight: 0.9
+    required: false
+  - id: downside_risk
+    name: Downside Risk
+    description: Magnitude and probability of permanent capital loss in reasonable bear scenarios.
+    scale: 1-10
+    weight: 1.3
+    required: true
+  - id: liquidity
+    name: Liquidity & Position Sizing
+    description: Can the position be entered and exited without adverse impact at the intended size?
+    scale: 1-10
+    weight: 0.7
+    required: false
+  - id: portfolio_fit
+    name: Portfolio Fit
+    description: Correlation with existing holdings and contribution to overall portfolio objectives.
+    scale: 1-10
+    weight: 0.8
+    required: false
